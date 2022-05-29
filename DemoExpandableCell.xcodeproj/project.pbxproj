@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		866CFD812842FA0700D543DC /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866CFD7F2842FA0700D543DC /* CollectionTableViewCell.swift */; };
-		866CFD822842FA0700D543DC /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 866CFD802842FA0700D543DC /* CollectionTableViewCell.xib */; };
+		866CFD812842FA0700D543DC /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866CFD7F2842FA0700D543DC /* CardCollectionViewCell.swift */; };
+		866CFD822842FA0700D543DC /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 866CFD802842FA0700D543DC /* CardCollectionViewCell.xib */; };
 		866CFD852842FA9000D543DC /* StandardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866CFD832842FA9000D543DC /* StandardTableViewCell.swift */; };
 		866CFD862842FA9000D543DC /* StandardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 866CFD842842FA9000D543DC /* StandardTableViewCell.xib */; };
+		866CFD8928430B8300D543DC /* ImageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866CFD8828430B8300D543DC /* ImageCard.swift */; };
+		866CFD8B28430B9800D543DC /* StandardTableViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866CFD8A28430B9800D543DC /* StandardTableViewCellModel.swift */; };
+		866CFD8D28430BAB00D543DC /* MaimModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866CFD8C28430BAB00D543DC /* MaimModel.swift */; };
+		866CFD8F28430BC200D543DC /* ModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866CFD8E28430BC200D543DC /* ModelBuilder.swift */; };
 		86D426AB2842F8ED00AE1B9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D426AA2842F8ED00AE1B9C /* AppDelegate.swift */; };
 		86D426AD2842F8ED00AE1B9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D426AC2842F8ED00AE1B9C /* SceneDelegate.swift */; };
 		86D426AF2842F8ED00AE1B9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D426AE2842F8ED00AE1B9C /* ViewController.swift */; };
@@ -20,10 +24,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		866CFD7F2842FA0700D543DC /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
-		866CFD802842FA0700D543DC /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
+		866CFD7F2842FA0700D543DC /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		866CFD802842FA0700D543DC /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
 		866CFD832842FA9000D543DC /* StandardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTableViewCell.swift; sourceTree = "<group>"; };
 		866CFD842842FA9000D543DC /* StandardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StandardTableViewCell.xib; sourceTree = "<group>"; };
+		866CFD8828430B8300D543DC /* ImageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCard.swift; sourceTree = "<group>"; };
+		866CFD8A28430B9800D543DC /* StandardTableViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardTableViewCellModel.swift; sourceTree = "<group>"; };
+		866CFD8C28430BAB00D543DC /* MaimModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaimModel.swift; sourceTree = "<group>"; };
+		866CFD8E28430BC200D543DC /* ModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelBuilder.swift; sourceTree = "<group>"; };
 		86D426A72842F8ED00AE1B9C /* DemoExpandableCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoExpandableCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D426AA2842F8ED00AE1B9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86D426AC2842F8ED00AE1B9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,12 +65,23 @@
 		866CFD7E2842F9E900D543DC /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				866CFD7F2842FA0700D543DC /* CollectionTableViewCell.swift */,
-				866CFD802842FA0700D543DC /* CollectionTableViewCell.xib */,
+				866CFD7F2842FA0700D543DC /* CardCollectionViewCell.swift */,
+				866CFD802842FA0700D543DC /* CardCollectionViewCell.xib */,
 				866CFD832842FA9000D543DC /* StandardTableViewCell.swift */,
 				866CFD842842FA9000D543DC /* StandardTableViewCell.xib */,
 			);
 			path = cell;
+			sourceTree = "<group>";
+		};
+		866CFD8728430B7600D543DC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				866CFD8828430B8300D543DC /* ImageCard.swift */,
+				866CFD8A28430B9800D543DC /* StandardTableViewCellModel.swift */,
+				866CFD8C28430BAB00D543DC /* MaimModel.swift */,
+				866CFD8E28430BC200D543DC /* ModelBuilder.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		86D4269E2842F8ED00AE1B9C = {
@@ -84,6 +103,7 @@
 		86D426A92842F8ED00AE1B9C /* DemoExpandableCell */ = {
 			isa = PBXGroup;
 			children = (
+				866CFD8728430B7600D543DC /* model */,
 				866CFD7D2842F9C500D543DC /* tableView */,
 				86D426AA2842F8ED00AE1B9C /* AppDelegate.swift */,
 				86D426AC2842F8ED00AE1B9C /* SceneDelegate.swift */,
@@ -157,7 +177,7 @@
 				86D426B72842F8EF00AE1B9C /* LaunchScreen.storyboard in Resources */,
 				86D426B42842F8EF00AE1B9C /* Assets.xcassets in Resources */,
 				86D426B22842F8ED00AE1B9C /* Main.storyboard in Resources */,
-				866CFD822842FA0700D543DC /* CollectionTableViewCell.xib in Resources */,
+				866CFD822842FA0700D543DC /* CardCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,11 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				866CFD8B28430B9800D543DC /* StandardTableViewCellModel.swift in Sources */,
 				866CFD852842FA9000D543DC /* StandardTableViewCell.swift in Sources */,
+				866CFD8928430B8300D543DC /* ImageCard.swift in Sources */,
 				86D426AF2842F8ED00AE1B9C /* ViewController.swift in Sources */,
 				86D426AB2842F8ED00AE1B9C /* AppDelegate.swift in Sources */,
 				86D426AD2842F8ED00AE1B9C /* SceneDelegate.swift in Sources */,
-				866CFD812842FA0700D543DC /* CollectionTableViewCell.swift in Sources */,
+				866CFD8F28430BC200D543DC /* ModelBuilder.swift in Sources */,
+				866CFD812842FA0700D543DC /* CardCollectionViewCell.swift in Sources */,
+				866CFD8D28430BAB00D543DC /* MaimModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
